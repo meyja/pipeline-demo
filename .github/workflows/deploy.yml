@@ -33,7 +33,7 @@ jobs:
       # (The code verifies that test.txt contains the substring assigned to the SUB variable,
       # and fails the test otherwise)
         run: |
-          STR=$(cat editme.txt)
+          STR=$(cat editme2.txt)
           SUB='developer'
           if [[ "$STR" == *"$SUB"* ]]; then
             echo "Successfully ran test for {{vars.sha_short}}. The file looks okay."
